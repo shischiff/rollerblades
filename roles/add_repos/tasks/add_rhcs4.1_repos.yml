@@ -1,0 +1,13 @@
+---
+  
+- name: add CEPH repos
+  yum_repository:
+    name: "{{ item }}"
+    description: "yum {{ item }} repo"
+    baseurl: "{{ url }}/{{ path }}/{{ ceph_version }}/{{ item }}"
+    enabled: yes
+    gpgcheck: no
+  with_items:
+  - "rhel-7-server-rhceph-4-mon-rpms"
+  - "rhel-7-server-rhceph-4-osd-rpms"
+  - "rhel-7-server-rhceph-4-tools-rpms"

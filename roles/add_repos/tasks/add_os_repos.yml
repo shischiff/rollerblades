@@ -1,0 +1,23 @@
+---
+
+- name: add third party repos
+  yum_repository:
+    name: "{{ item }}"
+    description: "yum {{ item }} repo"
+    baseurl: "{{ url }}/{{ path }}/{{ item }}"
+    enabled: yes
+    gpgcheck: no
+  with_items: 
+  - "epel"
+  - "hp-repo"
+
+- name: add rhel repos
+  yum_repository:
+    name: "{{ item }}"
+    description: "yum {{ item }} repo"
+    baseurl: "{{ url }}/{{ path }}/{{ item }}"
+    enabled: yes
+    gpgcheck: no
+  with_items: 
+  - "rhel-7-server-extras-rpms"
+  - "rhel-7-server-rpms"

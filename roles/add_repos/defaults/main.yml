@@ -1,0 +1,4 @@
+---
+# defaults file for add_repos
+url: "http://s3.example.com"
+path: "repos"
