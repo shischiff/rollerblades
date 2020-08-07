@@ -1,0 +1,3 @@
+[submodule "ansible-hosts"]
+	path = ansible-hosts
+	url = https://github.com/shischiff/ansible-hosts
