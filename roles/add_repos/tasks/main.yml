@@ -1,9 +1,9 @@
 ---
 # tasks file for add_repos
-- import_tasks: add_os_repos.yaml
+- import_tasks: add_os_repos.yml
   tags: 
   - os
 
-- import_tasks: add_{{ ceph_version }}_repos.yaml
+- import_tasks: add_{{ ceph_version }}_repos.yml
   tags: 
   - ceph
