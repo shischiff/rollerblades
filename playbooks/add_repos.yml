@@ -3,5 +3,7 @@
 - hosts: all
   become: true
   gather_facts: false
+  vars:
+    ceph_version: "{{ lookup('env','CEPH_VERSION') }}"
   roles:
     - ../roles/add_repos
