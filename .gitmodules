@@ -1,3 +1,6 @@
 [submodule "ansible-hosts"]
 	path = ansible-hosts
 	url = https://github.com/shischiff/ansible-hosts
+[submodule "ChangeLog-updater"]
+	path = ChangeLog-updater
+	url = https://github.com/shischiff/ChangeLog-updater.git
